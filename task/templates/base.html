@@ -17,18 +17,18 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="/" class="nav-link">Home</a>
+                    <a href="/" class="nav-link">Inicio</a>
                 </li>
                 
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a href="{% url 'tasks' %} " class="nav-link">Tasks Pending</a>
+                    <a href="{% url 'tasks' %} " class="nav-link">Tareas Pendientes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'tasks_completed' %}" class="nav-link">Tasks Completed</a>
+                    <a href="{% url 'tasks_completed' %}" class="nav-link">Tareas Completadas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/task/create/" class="nav-link">Create Tasks</a>
+                    <a href="/task/create/" class="nav-link">Crear Tarea</a>
                 </li>
                 <li class="nav-item">
                     <a href="/logout" class="nav-link">Logout</a>
